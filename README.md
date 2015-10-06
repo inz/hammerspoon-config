@@ -26,3 +26,9 @@ It will also try to hide the dock if only the laptop screen is connected. For th
 ### Screen/Window Layout
 
 * <kbd>⌘</kbd><kbd>⌥</kbd><kbd>Ctrl</kbd>-<kbd>r</kbd> restore window positions
+
+## License
+
+Copyright (c) 2015, Christian Inzinger
+
+Released under the MIT License see `LICENSE` for details.
