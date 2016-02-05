@@ -90,6 +90,16 @@ local function getCurrentLayout()
         log.i("Adding " .. app:bundleID() .. " to layout.")
         windows[app:bundleID()] = appentry
       end
+    else
+      log.i("Found app without bundle ID: pid:" .. app:pid() .. ", title: " .. app:title())
+      if app:title() == "quartz-wm" then
+        fnutils.each(app:allWindows(), function (win)
+          log.i("found " .. win:title())
+          if win and win:frame() and win:frame().h > 1 and win:title() then
+            appentry[win:title()] = win:frame().table
+          end
+        end)
+      end
     end
   end)
 
