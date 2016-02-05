@@ -12,7 +12,7 @@ hs.hotkey.bind({"cmd", "ctrl", "alt"}, "r", function ()
 end)
 
 -- window hints app switcher
-hs.hints.style = "vimperator"
+-- hs.hints.style = "vimperator"
 hs.hotkey.bind({"cmd", "ctrl", "shift"}, "tab", function ()
   hs.hints.windowHints()
 end)
