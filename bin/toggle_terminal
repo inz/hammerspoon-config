@@ -1,0 +1,11 @@
+#!/usr/bin/osascript -l JavaScript
+
+var sysev = Application("System Events");
+var termProcess = sysev.applicationProcesses["Terminal"];
+
+if(termProcess.frontmost()) {
+  termProcess.visible = false;
+} else {
+  // Application("Terminal").activate();
+  termProcess.frontmost = true;
+}

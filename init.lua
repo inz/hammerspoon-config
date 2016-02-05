@@ -26,6 +26,10 @@ hs.hotkey.bind({"cmd", "ctrl", "alt", "shift"}, "r", function ()
   hs.reload()
 end)
 
+hs.hotkey.bind({"ctrl"}, "`", function()
+  os.execute('bin/toggle_terminal')
+end)
+
 local function table_equals(aTable, otherTable)
   if aTable == otherTable then return true end
   if aTable == nil or otherTable == nil or #aTable ~= #otherTable then
