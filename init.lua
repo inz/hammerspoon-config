@@ -1,5 +1,5 @@
 local logger = require "hs.logger"
-logger.defaultLogLevel = 'debug'
+logger.defaultLogLevel = 'warning'
 local log = logger.new("init")
 
 require "extensions.reloadconfig"
