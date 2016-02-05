@@ -107,6 +107,10 @@ local function getCurrentLayout()
   return screenLayout
 end
 
+function module.getCurrentLayout()
+  return getCurrentLayout()
+end
+
 function module.saveLayout()
   log.i("Saving current window layout...")
   local screenLayout = getCurrentLayout()
