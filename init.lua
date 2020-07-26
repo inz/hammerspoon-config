@@ -90,3 +90,21 @@ screenChangedCallback()
 
 
 
+-- -- hotkey mash
+local mash   = {"ctrl", "alt"}
+local mash_app   = {"cmd", "alt", "ctrl"}
+local mash_shift = {"ctrl", "alt", "shift"}
+local mash_app_shift = {"cmd", "ctrl", "alt", "shift"}
+
+hs.grid.ui.textSize = 20
+-- move windows
+hs.hotkey.bind(mash, 'H', hs.grid.pushWindowLeft)
+hs.hotkey.bind(mash, 'J', hs.grid.pushWindowDown)
+hs.hotkey.bind(mash, 'K', hs.grid.pushWindowUp)
+hs.hotkey.bind(mash, 'L', hs.grid.pushWindowRight)
+--
+-- resize windows
+hs.hotkey.bind(mash, 'Y', hs.grid.resizeWindowThinner)
+hs.hotkey.bind(mash, 'U', hs.grid.resizeWindowShorter)
+hs.hotkey.bind(mash, 'I', hs.grid.resizeWindowTaller)
+hs.hotkey.bind(mash, 'O', hs.grid.resizeWindowWider)
