@@ -97,6 +97,9 @@ hs.grid.setGrid('45x25', '1440x900')
 hs.grid.setGrid('10x10')
 hs.grid.setMargins(hs.geometry'0,0')
 
+-- disable animation
+hs.window.animationDuration = 0.05
+
 
 -- -- hotkey mash
 local mash   = {"ctrl", "alt"}
