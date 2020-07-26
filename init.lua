@@ -88,6 +88,14 @@ screenWatcher:start()
 -- Call screen changed callback once to apply settings
 screenChangedCallback()
 
+-- init grid
+-- docs: https://github.com/Hammerspoon/hammerspoon/blob/master/extensions/grid/init.lua
+--hs.grid.setGrid('20x20', '2560x1440')
+--hs.grid.setGrid('10x10', '1440x900')
+hs.grid.setGrid('40x45', '2560x1440')
+hs.grid.setGrid('45x25', '1440x900')
+hs.grid.setGrid('10x10')
+hs.grid.setMargins(hs.geometry'0,0')
 
 
 -- -- hotkey mash
