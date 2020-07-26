@@ -1,0 +1,10 @@
+#!/usr/bin/osascript -l JavaScript
+
+var sysev = Application("System Events");
+var theProcess = sysev.applicationProcesses["Slack"];
+
+if(theProcess.frontmost()) {
+  theProcess.visible = false;
+} else {
+  theProcess.frontmost = true;
+}

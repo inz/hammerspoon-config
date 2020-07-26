@@ -30,6 +30,11 @@ hs.hotkey.bind({"ctrl"}, "`", function()
   os.execute('bin/toggle_terminal')
 end)
 
+hs.hotkey.bind({"ctrl", "shift"}, "`", function()
+  log.i('toggle slack')
+  os.execute('bin/toggle_slack')
+end)
+
 local function table_equals(aTable, otherTable)
   if aTable == otherTable then return true end
   if aTable == nil or otherTable == nil or #aTable ~= #otherTable then
