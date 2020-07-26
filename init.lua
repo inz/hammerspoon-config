@@ -57,7 +57,8 @@ local previousScreens = nil
 local laptopScreenIdIntegrated = 2077807229
 local laptopScreenIdDedicated = 69676418
 local laptopScreen13Id = 69732928
-local laptopScreens = { laptopScreenIdIntegrated, laptopScreenIdDedicated, laptopScreen13Id }
+local laptopScreen132Id = 69734272
+local laptopScreens = { laptopScreenIdIntegrated, laptopScreenIdDedicated, laptopScreen13Id, laptopScreen132Id }
 local externalDellU2713HMId = 722499407
 local externalThunderboltUzhId = 69503329
 
